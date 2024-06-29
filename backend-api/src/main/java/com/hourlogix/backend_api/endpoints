@@ -1,0 +1,28 @@
+loggedin manager-api/v1/hourlogix/manager/approvetimeoff
+loggedin manager-api/v1/hourlogix/manager/approvetimeoff/filter
+loggedin manager-api/v1/hourlogix/manager/approvetimeoff/approve/{id}
+loggedin manager- api/v1/hourlogix/manager/approvetimeoff/deny/{id}
+
+only loggedin employee- api/v1/hourlogix/employee/requesttimeoff
+
+anyone- api/v1/hourlogix/login
+
+
+- Which Controller endpoints need to be manager only?
+api/v1/hourlogix/manager/approvetimeoff
+api/v1/hourlogix/manager/timekeeps
+
+- Which need to be logged in users only?
+api/v1/hourlogix/employee/requesttime
+api/v1/hourlogix/employee/timesheets
+api/v1/hourlogix/employee/loghours
+api/v1/hourlogix/employee/paystub
+
+- Which need to be accessible to anyone?
+api/v1/hourlogix/login
+
+
+TODO FOR EVERYONE
+- change controller endpoint names to match:
+
+/api/v1/hourlogix/whateveryouwanthere
